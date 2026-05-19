@@ -1,126 +1,262 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Srajit M. Kumar</title>
-  <meta name="description" content="Srajit M. Kumar — PhD candidate in History at the South Asia Institute, Heidelberg University. Labour history of 20th century North India." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>srajit.fyi</title>
+  <meta name="description" content="Srajit M. Kumar — PhD candidate in History, South Asia Institute, Heidelberg University. Labour, time, and political consciousness in 20th-century North India." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>_</text></svg>" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main>
 
-    <header>
-      <div class="intro">
-        <img class="portrait" src="images/srajit.jpg" alt="Portrait of Srajit M. Kumar" />
-        <div class="intro-text">
-          <h1>Srajit M. Kumar</h1>
-          <p class="subtitle">
-            PhD candidate, Department of History<br />
-            South Asia Institute, Heidelberg University
-          </p>
+<nav>
+  <span class="nav-prefix">~/srajit</span>
+  <ul>
+    <li class="active"><a href="#about">about</a></li>
+    <li><a href="#research">research</a></li>
+    <li><a href="#talks">talks</a></li>
+    <li><a href="#writing">writing</a></li>
+    <li><a href="cv.pdf" target="_blank">cv</a></li>
+    <li><a href="#contact">contact</a></li>
+  </ul>
+  <button type="button" class="theme-toggle" id="theme-toggle" aria-label="toggle theme">
+    <div class="toggle-track"><div class="toggle-thumb"></div></div>
+  </button>
+</nav>
+
+<main>
+
+  <!-- Boot -->
+  <div class="boot-header">
+    <div class="boot-line"><span class="ok">[  OK  ]</span>  mounting <span class="path">/var/archives/kanpur/1914-47</span></div>
+    <div class="boot-line"><span class="ok">[  OK  ]</span>  loading dossier &mdash; <span class="path">srajit.fyi</span></div>
+    <div class="boot-line"><span class="warn">[ INFO ]</span>  last accessed: <span id="last-login"></span></div>
+  </div>
+
+  <!-- whois -->
+  <div class="section-cmd">
+    <span class="dollar">$</span>
+    <span class="cmd">whois <span class="arg">srajit</span></span>
+  </div>
+
+  <div class="who-block">
+    <div class="who-photo-col">
+      <div class="photo-frame">
+        <img src="images/srajit.jpg" alt="Srajit M. Kumar" class="profile-photo" />
+      </div>
+    </div>
+    <div class="who-text-col">
+      <div class="who-field"><span class="who-key">name </span><span class="who-sep">:</span> <span class="who-val bright">Srajit M. Kumar</span></div>
+      <div class="who-field"><span class="who-key">role </span><span class="who-sep">:</span> <span class="who-val">PhD candidate, History</span></div>
+      <div class="who-field"><span class="who-key">org  </span><span class="who-sep">:</span> <span class="who-val accent">South Asia Institute, Heidelberg</span></div>
+      <div class="who-field"><span class="who-key">advisor</span><span class="who-sep">:</span> <span class="who-val">Prof. Dr. Kama Maclean</span></div>
+      <div class="who-field"><span class="who-key">funding</span><span class="who-sep">:</span> <span class="who-val">DAAD PhD scholarship</span></div>
+      <div class="who-field"><span class="who-key">prior</span><span class="who-sep">:</span> <span class="who-val">MA Delhi &middot; BA Jamia Millia Islamia</span></div>
+      <div class="who-field"><span class="who-key">focus</span><span class="who-sep">:</span> <span class="who-val">labour history &middot; time &middot;</span></div>
+      <div class="who-field"><span class="who-key">     </span><span class="who-sep"> </span> <span class="who-val">political consciousness &middot; partition</span></div>
+    </div>
+  </div>
+
+  <!-- cat about -->
+  <div class="section-cmd" id="about">
+    <span class="dollar">$</span>
+    <span class="cmd">cat <span class="arg">about.txt</span></span>
+  </div>
+
+  <div class="block">
+    <p>
+      I am a PhD candidate in History at the South Asia Institute, Heidelberg University,
+      supervised by <span class="tag">Prof. Dr. Kama Maclean</span> and funded by a DAAD PhD
+      scholarship. My research sits at the intersection of labour history, the history of
+      time, and the political life of the working class in late-colonial North India.
+    </p>
+    <p>
+      I read for my BA in History at Jamia Millia Islamia in New Delhi (2020) and for my
+      MA in History at the University of Delhi (2022). Before Heidelberg, I worked in
+      Delhi's archives on questions of urban labour, communal violence, and the long
+      afterlife of partition.
+    </p>
+  </div>
+
+  <!-- cat research -->
+  <div class="section-cmd" id="research">
+    <span class="dollar">$</span>
+    <span class="cmd">cat <span class="arg">research.txt</span></span>
+  </div>
+
+  <div class="block">
+    <p>
+      <span class="tag">[dissertation]</span>
+      <em>Time, (Non)Work and Political Consciousness: The Kanpur Working Class, 1914&ndash;47.</em>
+      The project asks how labourers from the agrarian United Provinces, drawn into the
+      cotton and woollen mills of Kanpur, reshaped their experience of time during the
+      transition to industrial work &mdash; and what that shift meant for their politics.
+      Rather than reading the clock as the colonial coloniser of working-class life, I
+      argue that Kanpur's mill-workers resisted, negotiated, and at moments turned the
+      clock into an instrument of their own.
+    </p>
+    <p>
+      <span class="tag">[interests]</span>
+      labour history &middot; the history of time and discipline &middot; partition and
+      communalism &middot; the eighteenth-century crisis in South Asia &middot; the urban
+      history of Delhi &middot; archival method.
+    </p>
+  </div>
+
+  <!-- contact chips -->
+  <div class="section-cmd" id="contact">
+    <span class="dollar">$</span>
+    <span class="cmd">cat <span class="arg">links.txt</span></span>
+  </div>
+
+  <div class="contact-row">
+    <a href="mailto:srajit.kumar@sai.uni-heidelberg.de" class="contact-chip">&#9993; email</a>
+    <a href="https://www.sai.uni-heidelberg.de/en/departments-and-branches/south-asian-history/team/srajit-m-kumar" target="_blank" class="contact-chip">&#9670; SAI profile</a>
+    <a href="cv.pdf" target="_blank" class="contact-chip">&#10162; cv</a>
+    <a href="#" class="contact-chip">&#9711; academia.edu</a>
+    <a href="#" class="contact-chip">&#9651; orcid</a>
+  </div>
+
+  <!-- talks (updates log style) -->
+  <div class="section-cmd" id="talks">
+    <span class="dollar">$</span>
+    <span class="cmd">tail <span class="flag">-n 20</span> <span class="arg">talks.log</span></span>
+  </div>
+
+  <div class="entries">
+    <div class="entry open">
+      <div class="entry-header">
+        <span class="entry-index">01</span>
+        <div class="entry-meta">
+          <span class="entry-title">Time is Money and Work is Worship: A Case from 20th Century North India</span>
+          <span class="entry-venue hl">6 NOV 2024</span>
+        </div>
+        <span class="entry-chevron">&rsaquo;</span>
+      </div>
+      <div class="entry-body">
+        <div class="entry-authors"><strong>Srajit M. Kumar</strong> &middot; Colloquium, South Asia Institute, Heidelberg University</div>
+        <div class="entry-figure">
+          <img src="images/munch-clock-bed.jpg" alt="Edvard Munch, Self-Portrait. Between the Clock and the Bed (1940–43)" loading="lazy" />
+          <div class="entry-caption">
+            Edvard Munch, <em>Self-Portrait. Between the Clock and the Bed</em> (1940&ndash;43).
+            Munch Museum, Oslo. <span class="muted">Used in the original event poster.</span>
+          </div>
+        </div>
+        <div class="entry-abstract">
+          On how working-class populations in twentieth-century agrarian North India
+          encountered and reshaped temporal concepts during their transition to industrial
+          urban life in Kanpur &mdash; and how they sometimes turned the clock into an
+          instrument of negotiation and resistance.
+        </div>
+        <div class="entry-links">
+          <a href="https://www.sai.uni-heidelberg.de/en/events-at-sai/time-is-money-and-work-is-worship-a-case-from-20th-century-north-india-2024-11-06" target="_blank">event page</a>
         </div>
       </div>
-      <nav>
-        <a href="#about">about</a>
-        <a href="#research">research</a>
-        <a href="#talks">talks</a>
-        <a href="#writing">writing</a>
-        <a href="#contact">contact</a>
-      </nav>
-    </header>
+    </div>
+  </div>
 
-    <section id="about">
-      <h2>about</h2>
-      <p>
-        I am a PhD candidate at the South Asia Institute, Heidelberg University,
-        supervised by Prof. Dr. Kama Maclean and funded by a DAAD PhD scholarship.
-        I read for my BA in History at Jamia Millia Islamia, New Delhi (2020),
-        and for my MA in History at the University of Delhi (2022).
-      </p>
-    </section>
+  <!-- writing placeholder -->
+  <div class="section-cmd" id="writing">
+    <span class="dollar">$</span>
+    <span class="cmd">ls <span class="flag">-lt</span> <span class="arg">./writing/</span></span>
+  </div>
 
-    <section id="research">
-      <h2>research</h2>
-      <p>
-        My dissertation, <em>Time, (Non)Work and Political Consciousness:
-        The Kanpur Working Class, 1914&ndash;47</em>, examines how labourers
-        from the agrarian United Provinces adapted to industrial employment
-        in Kanpur &mdash; in particular, how their perception and experience
-        of time shifted during this transition, and the political consequences
-        of that shift.
-      </p>
-      <p>
-        More broadly, I am interested in labour history, the partition of
-        India, communalism, eighteenth-century South Asia, and the urban
-        history of Delhi.
-      </p>
-    </section>
+  <div class="block placeholder">
+    <p>
+      <span class="dim">&middot;&middot;&middot; no entries yet &middot;&middot;&middot;</span>
+    </p>
+    <p>
+      Working papers, articles, and reviews will appear here as they are published.
+    </p>
+  </div>
 
-    <section id="talks">
-      <h2>talks</h2>
-      <ul class="entries">
-        <li>
-          <span class="date">6 Nov 2024</span>
-          <span class="entry-body">
-            <a href="https://www.sai.uni-heidelberg.de/en/events-at-sai/time-is-money-and-work-is-worship-a-case-from-20th-century-north-india-2024-11-06">
-              Time is Money and Work is Worship: A Case from 20th Century North India
-            </a>
-            <br />
-            <span class="venue">Colloquium, South Asia Institute, Heidelberg University</span>
-            <br />
-            <span class="note">
-              On how working-class populations in 20th century agrarian
-              North India encountered and reshaped temporal concepts during
-              their transition to industrial urban life in Kanpur &mdash;
-              and how they sometimes turned the clock into an instrument
-              of negotiation and resistance.
-            </span>
-          </span>
-        </li>
-      </ul>
-    </section>
+  <!-- terminal -->
+  <div class="terminal-prompt">
+    <span class="ps1">srajit@archive:~$&nbsp;</span>
+    <input type="text" class="t-input" id="t-in" placeholder="type 'help'" autocomplete="off" spellcheck="false" />
+  </div>
+  <div class="t-response" id="t-out"></div>
 
-    <section id="writing">
-      <h2>writing</h2>
-      <p class="placeholder">
-        Publications and working papers will appear here.
-      </p>
-      <!--
-        Template for a new entry:
-        <ul class="entries">
-          <li>
-            <span class="date">2025</span>
-            <span class="entry-body">
-              <a href="URL">Title of the piece</a>
-              <br />
-              <span class="venue">Journal / Volume / Publisher</span>
-            </span>
-          </li>
-        </ul>
-      -->
-    </section>
+</main>
 
-    <section id="contact">
-      <h2>contact</h2>
-      <p>
-        South Asia Institute<br />
-        Vo&szlig;stra&szlig;e 2, Building 4130<br />
-        69115 Heidelberg, Germany
-      </p>
-      <p>
-        <a href="mailto:srajit.kumar@sai.uni-heidelberg.de">email</a>
-        &middot;
-        <a href="https://www.sai.uni-heidelberg.de/en/departments-and-branches/south-asian-history/team/srajit-m-kumar">SAI profile</a>
-        &middot;
-        <a href="cv.pdf">CV (PDF)</a>
-      </p>
-    </section>
+<footer>
+  &copy; 2026 Srajit M. Kumar &middot; built in Heidelberg
+</footer>
 
-    <footer>
-      <p>&copy; Srajit M. Kumar &middot; last updated May 2026</p>
-    </footer>
+<script>
+  // theme
+  const saved = localStorage.getItem('theme') || 'dark';
+  document.documentElement.setAttribute('data-theme', saved);
+  document.getElementById('theme-toggle').addEventListener('click', () => {
+    const cur = document.documentElement.getAttribute('data-theme');
+    const next = cur === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+  });
 
-  </main>
+  // last login
+  const d = new Date();
+  document.getElementById('last-login').textContent =
+    d.toDateString() + ' ' + d.toLocaleTimeString();
+
+  // entry collapse/expand
+  document.querySelectorAll('.entry-header').forEach(h => {
+    h.addEventListener('click', () => h.parentElement.classList.toggle('open'));
+  });
+
+  // terminal
+  const cmds = {
+    help: () => `<span class="muted">commands:</span>
+  <span class="cli-a">about</span>     show profile
+  <span class="cli-a">research</span>  view dissertation summary
+  <span class="cli-a">talks</span>     list talks
+  <span class="cli-a">cv</span>        open CV
+  <span class="cli-a">contact</span>   how to reach me
+  <span class="cli-a">whoami</span>    identify
+  <span class="cli-a">clear</span>     clear output`,
+
+    whoami: () => `<span class="cli-b">Srajit M. Kumar</span>
+  PhD candidate &middot; South Asia Institute &middot; Heidelberg University
+  <span class="muted">labour history &middot; time &middot; political consciousness &middot; North India</span>`,
+
+    about:    () => { document.getElementById('about').scrollIntoView({behavior:'smooth'}); return '<span class="ok-c">&rarr; about</span>'; },
+    research: () => { document.getElementById('research').scrollIntoView({behavior:'smooth'}); return '<span class="ok-c">&rarr; research</span>'; },
+    talks:    () => { document.getElementById('talks').scrollIntoView({behavior:'smooth'}); return '<span class="ok-c">&rarr; talks</span>'; },
+    contact:  () => { document.getElementById('contact').scrollIntoView({behavior:'smooth'}); return '<span class="ok-c">&rarr; contact</span>'; },
+    cv:       () => { setTimeout(()=>window.open('cv.pdf','_blank'),300); return '<span class="ok-c">&rarr; opening cv...</span>'; },
+
+    ls:    () => `<span class="muted">about.txt &nbsp; research.txt &nbsp; talks.log &nbsp; writing/ &nbsp; cv.pdf &nbsp; links.txt</span>`,
+    pwd:   () => `<span class="cli-a">/srajit</span>`,
+    date:  () => `<span class="cli-b">${new Date().toUTCString()}</span>`,
+    uptime:() => `<span class="muted">archive open since 1914; load average: heavy</span>`,
+    uname: () => `<span class="muted">srajit.fyi Heidelberg historian &mdash; running on chai</span>`,
+    cat:   () => `<span class="muted">&#128008; meow</span>`,
+    clock: () => `<span class="muted">tick. tock. the clock is a contested object.</span>`,
+    time:  () => `<span class="cli-b">${new Date().toLocaleTimeString()}</span> <span class="muted">&mdash; but whose time?</span>`,
+    sudo:  () => `<span class="err">permission denied</span> <span class="muted">&mdash; consult the archive directly</span>`,
+    rm:    () => `<span class="err">rm: refusing to delete the historical record</span>`,
+    'git blame': () => `<span class="warn-c">blame is the wrong frame.</span>`,
+    'git log':   () => `<span class="muted">commits authored 1914&ndash;1947, mostly unsigned.</span>`,
+    exit:  () => `<span class="muted">the past is not so easily exited.</span>`,
+    clear: () => { document.getElementById('t-out').innerHTML=''; return null; },
+  };
+
+  const input = document.getElementById('t-in');
+  const out = document.getElementById('t-out');
+  input.addEventListener('keydown', e => {
+    if (e.key !== 'Enter') return;
+    const raw = input.value.trim().toLowerCase();
+    input.value = '';
+    if (!raw) return;
+    const fn = cmds[raw] || cmds[raw.split(' ').slice(0,2).join(' ')] || cmds[raw.split(' ')[0]];
+    const res = fn ? fn() : `<span class="err">not found:</span> <span class="muted">${raw}</span> &mdash; try '<span class="cli-a">help</span>'`;
+    if (res !== null) out.innerHTML = res;
+  });
+  document.addEventListener('click', e => {
+    if (!e.target.closest('a') && !e.target.closest('.entry-header') && !e.target.closest('button')) input.focus();
+  });
+</script>
+
 </body>
 </html>
