@@ -275,7 +275,7 @@
         '  <span class="acc">06 nov 2024</span>  — somebody asked, in a colloquium,',
         '                  whether the clock was the coloniser.',
         '  <span class="acc">14 aug 1947</span>  — <span class="dim">(page missing)</span>',
-        '  <span class="acc">10 apr 1928</span>  — strike at the elgin mill. several',
+        '  <span class="acc">10 apr 1928</span>  — strike at the kanpur mills. several',
         '                  signatures, mostly with an X.',
         '  <span class="acc">28 jul 1914</span>  — first entry. illegible.',
         '',
