@@ -351,8 +351,13 @@ a:focus-visible {
   display: inline-flex;
   white-space: nowrap;
   padding: 6px 0;
-  animation: marqueeScroll 48s linear infinite;
+  animation: marqueeScroll 120s linear infinite;
   will-change: transform;
+}
+.marquee:hover .marquee-track,
+.marquee:focus-within .marquee-track { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; transform: translateX(0); }
 }
 .marquee-item {
   display: inline-flex;
