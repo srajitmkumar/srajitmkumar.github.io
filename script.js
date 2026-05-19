@@ -211,7 +211,7 @@
     talks()    { gotoTab('talks');    return `<span class="echo">→ talks</span>`; },
     writing()  { gotoTab('writing');  return `<span class="echo">→ writing</span>`; },
     contact()  { gotoTab('contact');  return `<span class="echo">→ contact</span>`; },
-    cv()       { setTimeout(() => window.open('../cv.pdf', '_blank'), 240); return `<span class="ok">→ opening cv.pdf …</span>`; },
+    cv()       { setTimeout(() => window.open('cv.pdf', '_blank'), 240); return `<span class="ok">→ opening cv.pdf …</span>`; },
 
     ls()       { return '<span class="dim">about.txt   research/   talks.log   writing/   contact.txt   cv.pdf</span>'; },
     pwd()      { return '<span class="acc">/archive/sai-heidelberg/kumar_s</span>'; },
