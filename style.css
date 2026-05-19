@@ -1,0 +1,189 @@
+/* Srajit M. Kumar — personal site
+   Minimal academic style: narrow column, serif body, monospace accents. */
+
+:root {
+  --bg: #fbfaf6;
+  --fg: #1a1a1a;
+  --muted: #6a6a6a;
+  --rule: #e2dfd6;
+  --link: #2a4a8a;
+  --link-hover: #c0392b;
+  --max-width: 38rem;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  font-size: 17px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 3rem 1.25rem 4rem;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  line-height: 1.55;
+  font-feature-settings: "kern", "liga", "onum";
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* ---- header ---- */
+
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.portrait {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  flex-shrink: 0;
+  border: 1px solid var(--rule);
+}
+
+.intro-text { flex: 1; min-width: 0; }
+
+header h1 {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  margin: 0 0 0.35rem;
+}
+
+header .subtitle {
+  margin: 0 0 1.25rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+nav {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.85rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 2rem;
+}
+
+nav a {
+  margin-right: 1.1rem;
+  color: var(--fg);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--muted);
+}
+
+nav a:hover { color: var(--link-hover); border-bottom-color: var(--link-hover); }
+
+/* ---- sections ---- */
+
+section { margin-bottom: 2.5rem; }
+
+section h2 {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: lowercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin: 0 0 0.9rem;
+}
+
+section h2::before { content: "§ "; color: var(--rule); }
+
+p { margin: 0 0 1rem; }
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 80ms, border-color 80ms;
+}
+
+a:hover {
+  color: var(--link-hover);
+  border-bottom-color: var(--link-hover);
+}
+
+em { font-style: italic; }
+
+/* ---- entry lists (talks, writing) ---- */
+
+ul.entries {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.entries > li {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.4rem;
+  align-items: baseline;
+}
+
+ul.entries .date {
+  flex: 0 0 5.5rem;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.8rem;
+  color: var(--muted);
+  padding-top: 0.15rem;
+  white-space: nowrap;
+}
+
+ul.entries .entry-body { flex: 1; }
+
+ul.entries .venue {
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-style: italic;
+}
+
+ul.entries .note {
+  display: block;
+  margin-top: 0.4rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.placeholder {
+  color: var(--muted);
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+/* ---- footer ---- */
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--rule);
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+footer p { margin: 0; }
+
+/* ---- small screens ---- */
+
+@media (max-width: 32rem) {
+  body { padding: 2rem 1rem 3rem; }
+  .intro { gap: 1rem; }
+  .portrait { width: 72px; height: 72px; }
+  ul.entries > li { flex-direction: column; gap: 0.15rem; }
+  ul.entries .date { flex-basis: auto; padding-top: 0; }
+  nav a { display: inline-block; margin-bottom: 0.35rem; }
+}
